@@ -8,40 +8,50 @@
 
 .container {
     height: 100vh;
-    width: 95vw;
+    width: 98vw;
     margin: 0 auto 5px auto;
     background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     border-radius: 5px;
+    overflow: hidden;
     }
 
 .container.london {
     background-image: url(../img/london.webp);
-
+    filter: invert(100%);
+    overflow: hidden;
 }
 
 .container.munich {
     background-image: url(../img/munich.jpg);
+    filter: invert(100%);
+}
+
+.container.munich:hover {
+    filter: invert(100%);
 }
 
 .container.new-york {
     background-image: url(../img/new-york.jpeg);
+    filter: invert(100%);
 }
 
 .container.tokyo {
     background-image: url(../img/tokyo.png);
+    filter: invert(100%);
 }
+
+
 .text{
     text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    color: #000000;
+    color: #ffffff;
     opacity: 0.75;
-
   }
 
 .overlay {
@@ -50,5 +60,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  .container.london:hover, .container.munich:hover, .container.new-york:hover, .container.tokyo:hover {
+      filter: invert(0%);
   }
