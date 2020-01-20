@@ -21,7 +21,6 @@
 .container.london {
     background-image: url(../img/london.webp);
     filter: invert(100%);
-    overflow: hidden;
 }
 
 .container.munich {
