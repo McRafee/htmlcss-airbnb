@@ -29,10 +29,6 @@
     filter: invert(100%);
 }
 
-.container.munich:hover {
-    filter: invert(100%);
-}
-
 .container.new-york {
     background-image: url(../img/new-york.jpeg);
     filter: invert(100%);
